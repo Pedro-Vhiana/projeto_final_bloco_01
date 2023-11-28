@@ -1,6 +1,6 @@
 package produto.model;
 
-public class Botas {
+public abstract class Botas {
 
 	private String nome;
 	private int tamanho;
@@ -8,7 +8,7 @@ public class Botas {
 	private int id;
 	private int tipo;
 
-	public Botas(String nome, int tamanho, String marca, int id, int tipo) {
+	public Botas(int id, String nome, int tamanho, String marca, int tipo) {
 		super();
 		this.nome = nome;
 		this.tamanho = tamanho;
@@ -41,12 +41,12 @@ public class Botas {
 		this.marca = marca;
 	}
 
-	public int getAno() {
+	public int getId() {
 		return id;
 	}
 
-	public void setAno(int ano) {
-		this.id = ano;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getTipo() {
@@ -71,13 +71,13 @@ public class Botas {
 		}
 		
 		System.out.print("\n##--Viana Boots Ecommerce--##\n\n");
-		System.out.print("|-----------------------------|\n");
+		System.out.print("|--------------------------------------------------|\n");
 		System.out.print("| Nome: " + this.nome+"\n");
 		System.out.print("| Id: " + this.id+"\n");
 		System.out.print("| Tipo da bota: " +tipo+"\n");
 		System.out.print("| Tamanho: " + this.tamanho+"\n");
 		System.out.print("| Marca: " + this.marca+"\n");
-		System.out.print("|-----------------------------|\n");
+		
 		
 
 	}

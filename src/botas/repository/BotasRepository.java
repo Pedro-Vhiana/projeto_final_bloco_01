@@ -4,14 +4,20 @@ import produto.model.Botas;
 
 public interface BotasRepository {
 
-	public void procurarPorid(int id);
+	public void procurarPorId(int id);
 
-	public void listarTodas();
+	public void listarBotas();
 
 	public void cadastrar(Botas botas);
 
 	public void atualizar(Botas botas);
 	
-	public void deletar(String id);
+	public void deletar(int id);
+	
+	
+	// Métodos Especiais
+	public void couro(int couro);
+	
+	public void brinde(int brinde);
 
 }
